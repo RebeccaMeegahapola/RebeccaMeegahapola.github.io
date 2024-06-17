@@ -458,3 +458,9 @@ ul.social-buttons li a {
     border: none;
   }
 
+/*mobile*/
+@media only screen and (max-width: 767px) {
+    footer {
+        height: 600px;
+    }
+}
