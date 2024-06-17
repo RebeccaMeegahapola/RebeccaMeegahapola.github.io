@@ -2,12 +2,13 @@
 
 * {
     box-sizing: border-box;
+    font-family: cursive;
   }
   
  
-body {
+/* body {
     font-family: cursive;
-}
+} */
  /*Navbar */
 
 .navbar-dark {
