@@ -14,6 +14,42 @@ body {
     background: linear-gradient(112.1deg, #000000 11.4%, #130F40 70.2%);
 }
 
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    opacity: 1;
+  }
+  
+
+.nav-link:hover {
+    opacity: 1;
+  }
+  
+  .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #eeeeef;
+  }
+  
+  .nav-link::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  .nav-link:hover::before {
+    width: 100%;
+  }
+  
+
 /*div1*/
 
 .bg-clr {
@@ -28,7 +64,15 @@ body {
     justify-content: center;
     text-align: center;
     height: 400px;
-    
+    color: white;
+    position: relative;   
+}
+
+.div1Cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .heading-primary {
@@ -114,6 +158,11 @@ ul.about-info li a {
     border-radius: 5px;
     font-weight: 500;
     color: white;
+    transition: all 0.5s;
+}
+
+.skills__skill:hover {
+    transform: scale(1.1);
 }
 
 /*experience*/
@@ -199,6 +248,11 @@ h2.accordion-header {
     float: left;
     width: 30%;
     display: none; 
+    transition: all 0.5s;
+}
+
+.column:hover {
+    transform: scale(1.1);
 }
   
 .row:after {
@@ -223,15 +277,22 @@ h2.accordion-header {
     padding: 12px 16px;
     background-color: white;
     cursor: pointer;
+    transition: all 0.5s;
 }
   
 .btn:hover {
     background-color: #ddd;
+    transform: scale(1.1);
 }
   
 .btn.active {
     background-color: #666;
     color: white;
+    transition: all 0.5s;
+}
+
+.btn.active:hover {
+    transform: scale(1.1);
 }
 
 /*Contact*/
@@ -422,6 +483,7 @@ ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #130F40;
   color: white;
+  transform: scale(1.1);
 }
 
 ul.social-buttons li a {
@@ -430,13 +492,11 @@ ul.social-buttons li a {
   display: block;
   width: 40px;
   height: 40px;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
   color: black;
   border-radius: 100%;
   outline: 0;
   background-color: white;
+  transition: all 0.5s;
 }
 
 .copyright {
@@ -456,11 +516,65 @@ ul.social-buttons li a {
     background-color: rgb(19 15 64);
     color: white;
     border: none;
+    transition: all 0.5s;
   }
 
-/*mobile*/
-@media only screen and (max-width: 767px) {
-    footer {
-        height: 600px;
+.fbtn:hover {
+    background-color: #0b0829;
+    color: white;
+    border: 1px solid #130F40;
+    transform: scale(1.1);
+}
+
+/*tab*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    .column {
+        width: 100%;
     }
 }
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+    .div2 {
+        padding: 30px 0;
+    }
+
+    .aboutPara {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .para2 {
+        text-align: center;
+    }
+
+    .sect2 {
+        margin-top: 30px;
+    }
+
+    .skills {
+        justify-content: center;
+    }
+
+    .date {
+        font-size: 10px;
+    }
+
+    .div6 {
+        height: 1210px;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    ul.about-info li span:first-child {
+        width: 90px;
+    }
+
+    footer {
+        height: 200px;
+    }
+}
+
