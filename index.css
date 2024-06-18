@@ -1,14 +1,14 @@
 @import url(https://unpkg.com/@webpixels/css@1.0/dist/index.css);
 
+
 * {
     box-sizing: border-box;
-    font-family: cursive;
   }
   
- 
-/* body {
-    font-family: cursive;
-} */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
  /*Navbar */
 
 .navbar-dark {
@@ -537,10 +537,6 @@ ul.social-buttons li a {
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
-    body {
-        font-family: cursive;
-    }
-    
     .div2 {
         padding: 30px 0;
     }
